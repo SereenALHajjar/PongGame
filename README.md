@@ -1,29 +1,38 @@
-# Raylib-CPP-Starter-Template-for-VSCODE-V2
-Raylib C++ Starter Template for Visual Studio Code on Windows.
-This demo project contains a bouncing ball raylib example program.
-It works with raylib version 5.0. Tested on both Windows 10 and Windows 11.
+# Pong Game Documentation
 
-# How to use this template
-1. Double click on the main.code-workspace file. This will open the template in VS Code.
-2. From the Explorer Window of VS Code navigate to the src folder and double click on the main.cpp file.
-3. Press F5 on the keyboard to compile and run the program.
+## Overview
+Pong is a classic arcade game where players control paddles to hit a ball back and forth. The objective is to score points by making the ball pass the opponent's paddle.
 
-# What's changed
-The template now uses folders for better organizion of the files. So, all the source code now lives in the src folder.
+![Pong Game](pong_game.png)
 
-# Video Tutorial
+## Features
+- Two-player mode: Players can compete against each other using two paddles.
+- Simple controls: Player 1 uses arrow keys (Up and Down), and Player 2 uses the 'W' and 'S' keys to control their paddles.
+- Ball movement: The ball moves in a straight line, bouncing off walls and paddles.
+- Scoring: Each time the ball passes the opponent's paddle, the opposing player scores a point.
+- Win condition: The game ends when one player reaches a set number of points (e.g., 10).
 
-<p align="center">
-  <img src="preview.jpg" alt="" width="800">
-</p>
+## Controls
+- Player 1:
+  - Up Arrow: Move paddle up
+  - Down Arrow: Move paddle down
 
-<p align="center">
-🎥 <a href="https://www.youtube.com/watch?v=PaAcVk5jUd8">Video Tutorial on YouTube</a>
-</p>
+- Player 2:
+  - W: Move paddle up
+  - S: Move paddle down
 
-<br>
-<br>
-<p align="center">
-| 📺 <a href="https://www.youtube.com/channel/UC3ivOTE5EgpmF2DHLBmWIWg">My YouTube Channel</a>
-| 🌍 <a href="http://www.educ8s.tv">My Website</a> | <br>
-</p>
+## Installation
+1. Clone or download the Pong game repository from GitHub.
+2. Ensure you have the necessary dependencies installed (e.g., Raylib).
+3. Compile the source code using your preferred compiler.
+4. Run f5 to start the game.
+
+## Future Enhancements
+- Add a single-player mode with an AI opponent.
+- Implement sound effects and background music.
+- Add options menu for customization (e.g., paddle speed, ball speed).
+- Improve game graphics and animations.
+
+## Credits
+- Built using [Raylib](https://www.raylib.com/)
+- Inspired by the classic arcade game Pong

@@ -34,16 +34,26 @@ public:
         {
             speed_x *= -1;
             score2++;
+            Reset() ;
         }
         if (x + radius >= WINDOW_WIDTH)
         {
             speed_x *= -1;
             score1++;
+            Reset() ;
         }
         if (y - radius <= 0 || y + radius >= WINDOW_HEIGHT)
         {
             speed_y *= -1;
         }
+    }
+    void Reset()
+    {
+        x = WINDOW_WIDTH/2 ;
+        y = WINDOW_HEIGHT/2 ;
+        int speed_choice [] = {1 , -1} ;
+        speed_x *= speed_choice[GetRandomValue(0 , 1)] ;
+        speed_y *=speed_choice[GetRandomValue(0 , 1)] ;
     }
 };
 
